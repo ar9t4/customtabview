@@ -10,9 +10,11 @@ A fully customized tab view on the go!
 - Configure tabs with or without the step count wizard
 - Configure tabs with optional behaviour **Movable to Next Tab** or **Not Movable to Next Tab**
 
-
 #### Current Version:
 [![](https://jitpack.io/v/ar9t4/customtabview.svg)](https://jitpack.io/#ar9t4/customtabview)
+
+#### Demo:
+![](demo.gif)
 
 #### Setup:
 
