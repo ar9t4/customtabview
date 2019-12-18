@@ -1,0 +1,2 @@
+include ':demo', ':customtabview'
+rootProject.name='CustomTabViewDemo'

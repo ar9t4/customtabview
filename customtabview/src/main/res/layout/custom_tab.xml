@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_down" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
+    <View
+        android:id="@+id/left_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/number"
+        app:layout_constraintEnd_toStartOf="@id/number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/number" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_tab_unselected_circle"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <View
+        android:id="@+id/right_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/number"
+        app:layout_constraintTop_toTopOf="@id/number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
